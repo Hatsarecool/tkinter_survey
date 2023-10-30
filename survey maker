@@ -1,0 +1,12 @@
+from tkinter import *
+from tkinter import messagebox
+def create_survey(q1, q2, q3):
+    
+    sq1 = messagebox.askquestion("Question 1: ", q1)
+    sq2 = messagebox.askquestion("Question 2: ", q2)
+    sq3 = messagebox.askquestion("Question 3: ", q3)
+    return(sq1, sq2, sq3)
+que1 = input("1:")
+que2 = input("2:")
+que3 = input("3:")
+print(create_survey(que1, que2, que3))
